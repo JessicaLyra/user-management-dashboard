@@ -92,5 +92,5 @@ A API retorna uma lista de usuários contendo informações como:
 Jessica Lyra
 Desenvolvedora Web
 
-LinkedIn: (adicione seu link aqui)
-GitHub: (adicione seu GitHub aqui)
+LinkedIn: https://www.linkedin.com/in/jessica-lyra-9463a0163/
+GitHub: https://github.com/JessicaLyra
