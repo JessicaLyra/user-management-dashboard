@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# User Management Dashboard
 
-## Getting Started
+Projeto desenvolvido com **Next.js + TypeScript** consumindo uma API pública para exibir usuários em um painel.
 
-First, run the development server:
+## 📌 Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto foi criado com o objetivo de praticar conceitos importantes do desenvolvimento front-end moderno, como:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Consumo de APIs
+* Organização de projeto
+* Componentização
+* Tipagem com TypeScript
+* Estrutura profissional de aplicações React/Next.js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A aplicação consome dados da API pública **JSONPlaceholder** para listar usuários em formato de cards.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Tecnologias utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* API JSONPlaceholder
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Estrutura do projeto
 
-## Deploy on Vercel
+src/
+├── app/
+│ └── users/
+│ └── page.tsx
+│
+├── components/
+│ └── UserCard.tsx
+│
+├── services/
+│ └── userService.ts
+│
+├── types/
+│ └── User.ts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Explicação da arquitetura
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O fluxo da aplicação segue o padrão:
+
+API → Services → Types → Components → Pages
+
+* **Services**: responsável por consumir a API
+* **Types**: define a tipagem dos dados recebidos
+* **Components**: componentes reutilizáveis da interface
+* **Pages**: páginas da aplicação
+
+---
+
+## 🔌 API utilizada
+
+https://jsonplaceholder.typicode.com/users
+
+A API retorna uma lista de usuários contendo informações como:
+
+* Nome
+* Email
+* Telefone
+* Empresa
+* Website
+
+---
+
+## 📸 Funcionalidades atuais
+
+* Listagem de usuários
+* Renderização de cards com dados da API
+* Estrutura organizada para escalabilidade
+
+---
+
+## 📈 Melhorias futuras
+
+* Busca de usuários
+* Página de detalhes do usuário
+* Loading skeleton
+* Paginação
+* Dashboard com estatísticas
+
+---
+
+## 👩‍💻 Autora
+
+Jessica Lyra
+Desenvolvedora Web
+
+LinkedIn: (adicione seu link aqui)
+GitHub: (adicione seu GitHub aqui)
